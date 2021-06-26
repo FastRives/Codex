@@ -1,0 +1,67 @@
+/* 
+██████╗ ███████╗███████╗███████╗████████╗
+██╔══██╗██╔════╝██╔════╝██╔════╝╚══██╔══╝
+██████╔╝█████╗  ███████╗█████╗     ██║   
+██╔══██╗██╔══╝  ╚════██║██╔══╝     ██║   
+██║  ██║███████╗███████║███████╗   ██║   
+╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝   ╚═╝   
+*/
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Font-size responsive */
+
+html {
+    font-family: "Exo 2", sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    background-image: repeating-radial-gradient(
+        circle at center center,
+        rgb(31, 31, 31) 0px,
+        rgb(31, 31, 31) 33px,
+        rgb(26, 26, 26) 33px,
+        rgb(26, 26, 26) 79px,
+        rgb(20, 20, 20) 79px,
+        rgb(20, 20, 20) 88px
+    );
+    background-size: 56px 56px;
+    height: 100%;
+}
+
+/* 
+███████╗ ██████╗██████╗  ██████╗ ██╗     ██╗     ██████╗  █████╗ ██████╗ 
+██╔════╝██╔════╝██╔══██╗██╔═══██╗██║     ██║     ██╔══██╗██╔══██╗██╔══██╗
+███████╗██║     ██████╔╝██║   ██║██║     ██║     ██████╔╝███████║██████╔╝
+╚════██║██║     ██╔══██╗██║   ██║██║     ██║     ██╔══██╗██╔══██║██╔══██╗
+███████║╚██████╗██║  ██║╚██████╔╝███████╗███████╗██████╔╝██║  ██║██║  ██║
+╚══════╝ ╚═════╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+*/
+
+/* Fond de la scrollbar */
+
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: rgb(54, 54, 54);
+}
+
+/* Border de la scrollbar */
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Pad de la scrollbar */
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(0deg, rgba(15, 12, 41, 1) 0%, rgba(48, 43, 99, 1) 50%, rgba(36, 36, 62, 1) 100%);
+    border-radius: 10px;
+}

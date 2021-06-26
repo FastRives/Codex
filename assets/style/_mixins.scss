@@ -1,0 +1,12 @@
+@mixin planet-position($height, $width, $left) {
+    height: $height;
+    width: $width;
+    left: $left;
+}
+
+@mixin animation($name, $duration, $timing, $fill-mode) {
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-timing-function: $timing;
+    animation-fill-mode: $fill-mode;
+}
